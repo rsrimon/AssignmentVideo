@@ -111,11 +111,48 @@ nav ul li ul a{
     width: 100%;
     top: 0;
     left: 0;
-    background-color: hsla(228, 73%, 55%, 0.6);
+    background-color: rgba(98, 121, 223, 0.602);
     visibility: hidden;
     opacity: 0;
+    transition: .4s;
 }
 .galery-item:hover.galery-item::after{
     visibility: visible;
     opacity: 1;
+}
+
+/* ======== Pricing Table Section CSS ======== */
+
+.pricing-item{
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191, .1);
+    transition: .5s;
+}
+.pricing-item ul li{
+    margin: 20px 0;
+    font-size: 20px;
+    color: #777;
+}
+.pricing-item ul li span{
+    display: inline-block;
+    color: #6278df;
+    width: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.pricing-item-button a{
+    color: #6278df;
+    border-color: #6278df;
+    border-width: 2px;
+    padding: 15px 30px;
+    font-size: 22px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191, .2);
+}
+.pricing-item-button a:hover{
+    background-color: black !important;
+}
+.pricing-item:hover .pricing-item-button a{
+    color: #fff;
+    background-color: #6278df;
 }
