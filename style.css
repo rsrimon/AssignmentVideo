@@ -1,0 +1,121 @@
+/* ======== Default Style CSS ======== */
+
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.bg{
+    background-color: #f7f9ff;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* ======== NavBar Section ======== */
+
+.navbar-logo{
+    width: 50px;
+    margin-right: 15px;
+}
+.navbar-text a{
+    font-size: 30px;
+    font-weight: 600;
+    transition: .4s;
+}
+.navbar-text a:hover{
+    color: rgba(0, 0, 0, 0.424) !important;
+}
+nav ul li a{
+    color: #000;
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+/* ======== DropDown Menu Section CSS ======== */
+
+nav ul li{
+    position: relative;
+}
+nav ul li ul{
+    position: absolute;
+    width: 230px;
+    left: -20px;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    z-index: 9;
+    background-color: white;
+}
+nav ul li:hover ul{
+visibility: visible;
+opacity: 1;
+transform: scaleY(1);
+}
+nav ul li ul a{
+    padding: 10px 0px;
+    margin-left: 0;
+}
+
+/* ======== Slider section CSS ======== */
+
+.slider{
+    background-image: url(./Img/mbr-10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+/* ======== Featur Section CSS ======== */
+
+.featur-item{
+    height: 280px;
+}
+.item-left{
+    width: 40%;
+}
+.item-rignt{
+    width: 60%;
+    padding: 25px;
+}
+/* ======== Galery Section CSS ======== */
+
+.galery-item{
+    position: relative;
+}
+.galery-item::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(228, 73%, 55%, 0.6);
+    visibility: hidden;
+    opacity: 0;
+}
+.galery-item:hover.galery-item::after{
+    visibility: visible;
+    opacity: 1;
+}
